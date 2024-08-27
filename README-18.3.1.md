@@ -7,9 +7,9 @@ React DOM in ESM format.
 Install:
 
 ```sh
-npm i react@git+file:///home/mk/github/esm-polyfill/react-dom
+npm i react-dom@git+file:///home/mk/github/esm-polyfill/react-dom
 # specific version
-npm i react@git+file:///home/mk/github/esm-polyfill/react-dom#semver:^18.3.1
+npm i react-dom@git+file:///home/mk/github/esm-polyfill/react-dom#semver:^18.3.1
 ```
 
 ## Use 
