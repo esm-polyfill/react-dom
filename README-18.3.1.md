@@ -17,7 +17,7 @@ npm i react@git+file:///home/mk/github/esm-polyfill/react-dom#semver:^18.3.1
 Reference:
 
 ```ts
-import React from 'react-dom'
+import ReactDom from 'react-dom'
 
 // ...
 
@@ -44,7 +44,6 @@ cp node_modules/react-dom-18.3.1/package.json package-18.3.1.json
 cp node_modules/react-dom-18.3.1/package.json react-dom-18.3.1
 cp node_modules/react-dom-18.3.1/README.md react-dom-18.3.1
 cp node_modules/react-dom-18.3.1/LICENSE react-dom-18.3.1
-cp -r node_modules/react-dom-18.3.1/cjs react-dom-18.3.1/cjs
 
 
 npx esbuild node_modules/react-dom-18.3.1/*.js \
