@@ -1,0 +1,192 @@
+{
+  "name": "@esm-polyfill/react-dom",
+  "description": "React-DOM in ESM format",
+  "keywords": [
+    "react", "esm", "dom"
+  ],
+  "version": "18.3.1",
+  "repository": {
+    "type": "git",
+    "url": "git+file:///home/mk/github/esm-polyfill/react-dom"
+  },
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "react-dom-18.3.1/",
+    "package.json",
+    "README"
+  ],
+  "dependencies": {
+    "scheduler": "git+file:///home/mk/github/esm-polyfill/scheduler#semver^0.23.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.1",
+    "react-dom-18.3.1": "npm:react-dom@^18.3.1",
+    "react-dom-types-18.3": "npm:@types/react-dom@18.3"
+  },
+  "peerDependencies": {
+    "react": "git+file:///home/mk/github/esm-polyfill/react#semver^18.3.1"
+  },
+  "exports": {
+    ".": {
+      "types": "./react-dom-18.3.1/index.d.ts",
+      "development": {
+        "import": "./react-dom-18.3.1/esm-development/index.js",
+        "require": "./react-dom-18.3.1/cjs-development/index.js"
+      },
+      "production": {
+        "import": "./react-dom-18.3.1/esm-production/index.js",
+        "require": "./react-dom-18.3.1/cjs-production/index.js"
+      },
+      "default": {
+        "import": "./react-dom-18.3.1/esm-production/index.js",
+        "require": "./react-dom-18.3.1/cjs-production/index.js"
+      }
+    },
+    "./client": {
+      "types": "./react-dom-18.3.1/client.d.ts",
+      "development": {
+        "import": "./react-dom-18.3.1/esm-development/client.js",
+        "require": "./react-dom-18.3.1/cjs-development/client.js"
+      },
+      "production": {
+        "import": "./react-dom-18.3.1/esm-production/client.js",
+        "require": "./react-dom-18.3.1/cjs-production/client.js"
+      },
+      "default": {
+        "import": "./react-dom-18.3.1/esm-production/client.js",
+        "require": "./react-dom-18.3.1/cjs-production/client.js"
+      }
+    },
+    "./server": {
+      "types": "./react-dom-18.3.1/server.d.ts",
+      "deno": {
+        "development": {
+          "import": "./react-dom-18.3.1/esm-development/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-development/server.browser.js"
+        },
+        "production": {
+          "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+        },
+        "default": {
+          "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+        }
+      },
+      "worker": {
+        "development": {
+          "import": "./react-dom-18.3.1/esm-development/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-development/server.browser.js"
+        },
+        "production": {
+          "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+        },
+        "default": {
+          "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+        }
+      },
+      "browser": {
+        "development": {
+          "import": "./react-dom-18.3.1/esm-development/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-development/server.browser.js"
+        },
+        "production": {
+          "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+        },
+        "default": {
+          "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+        }
+      },
+      "default": {
+        "development": {
+          "import": "./react-dom-18.3.1/esm-development/server.node.js",
+          "require": "./react-dom-18.3.1/cjs-development/server.node.js"
+        },
+        "production": {
+          "import": "./react-dom-18.3.1/esm-production/server.node.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.node.js"
+        },
+        "default": {
+          "import": "./react-dom-18.3.1/esm-production/server.node.js",
+          "require": "./react-dom-18.3.1/cjs-production/server.node.js"
+        }
+      }
+    },
+    "./server.browser": {
+      "types": "./react-dom-18.3.1/server.d.ts",
+      "development": {
+        "import": "./react-dom-18.3.1/esm-development/server.browser.js",
+        "require": "./react-dom-18.3.1/cjs-development/server.browser.js"
+      },
+      "production": {
+        "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+        "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+      },
+      "default": {
+        "import": "./react-dom-18.3.1/esm-production/server.browser.js",
+        "require": "./react-dom-18.3.1/cjs-production/server.browser.js"
+      }
+    },
+    "./server.node": {
+      "types": "./react-dom-18.3.1/server.d.ts",
+      "development": {
+        "import": "./react-dom-18.3.1/esm-development/server.node.js",
+        "require": "./react-dom-18.3.1/cjs-development/server.node.js"
+      },
+      "production": {
+        "import": "./react-dom-18.3.1/esm-production/server.node.js",
+        "require": "./react-dom-18.3.1/cjs-production/server.node.js"
+      },
+      "default": {
+        "import": "./react-dom-18.3.1/esm-production/server.node.js",
+        "require": "./react-dom-18.3.1/cjs-production/server.node.js"
+      }
+    },
+    "./profiling": {
+      "types": "./react-dom-18.3.1/profiling.d.ts",
+      "development": {
+        "import": "./react-dom-18.3.1/esm-development/profiling.js",
+        "require": "./react-dom-18.3.1/cjs-development/profiling.js"
+      },
+      "production": {
+        "import": "./react-dom-18.3.1/esm-production/profiling.js",
+        "require": "./react-dom-18.3.1/cjs-production/profiling.js"
+      },
+      "default": {
+        "import": "./react-dom-18.3.1/esm-production/profiling.js",
+        "require": "./react-dom-18.3.1/cjs-production/profiling.js"
+      }
+    },
+    "./test-utils": {
+      "types": "./react-dom-18.3.1/test-utils/index.d.ts",
+      "development": {
+        "import": "./react-dom-18.3.1/esm-development/test-utils.js",
+        "require": "./react-dom-18.3.1/cjs-development/test-utils.js"
+      },
+      "production": {
+        "import": "./react-dom-18.3.1/esm-production/test-utils.js",
+        "require": "./react-dom-18.3.1/cjs-production/test-utils.js"
+      },
+      "default": {
+        "import": "./react-dom-18.3.1/esm-production/test-utils.js",
+        "require": "./react-dom-18.3.1/cjs-production/test-utils.js"
+      }
+    },
+    "./package.json": "./package.json",
+    "./canary": {
+      "types": {
+        "default": "./react-dom-18.3.1/canary.d.ts"
+      }
+    },
+    "./experimental": {
+        "types": {
+          "default": "./react-dom-18.3.1/experimental.d.ts"
+        }
+    }
+  }
+}
