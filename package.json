@@ -20,8 +20,18 @@
   },
   "devDependencies": {
     "esbuild": "^0.23.1",
+    "react-for-dev-peer": "npm:react@18.3.1",
+    "react-dom-19": "npm:react-dom@rc",
     "react-dom-18.3.1": "npm:react-dom@^18.3.1",
     "react-dom-types-18.3": "npm:@types/react-dom@18.3"
+  },
+  "overrides": {
+    "react-dom-18.3.1": {
+      "react": "$react-for-dev-peer"
+    },
+    "react-dom-19": {
+      "react": "$react-for-dev-peer"
+    }
   },
   "peerDependencies": {
     "react": "git+file:///home/mk/github/esm-polyfill/react#semver:^18.3.1"
