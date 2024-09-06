@@ -7,9 +7,9 @@ React DOM in ESM format.
 Install:
 
 ```sh
-npm i react-dom@git+file:///home/mk/github/esm-polyfill/react-dom
+npm i react-dom@esm-polyfill/react-dom
 # specific version
-npm i react-dom@git+file:///home/mk/github/esm-polyfill/react-dom#semver:^18.3.1
+npm i react-dom@esm-polyfill/react-dom#semver:^18.3.1
 ```
 
 ## Use 
@@ -127,7 +127,7 @@ npx esbuild node_modules/react-dom-18.3.1/*.js \
 ```json
 {
   "dependencies": {
-    "scheduler": "git+file:///home/mk/github/esm-polyfill/scheduler#semver:^0.23.2"
+    "scheduler": "github:esm-polyfill/scheduler#semver:^0.23.2"
   },
   "devDependencies": {
     "esbuild": "^0.23.1",
@@ -135,7 +135,7 @@ npx esbuild node_modules/react-dom-18.3.1/*.js \
     "react-dom-types-18.3": "npm:@types/react-dom@18.3"
   },
   "peerDependencies": {
-    "react": "git+file:///home/mk/github/esm-polyfill/react#semver:^18.3.1"
+    "react": "github:esm-polyfill/react#semver:^18.3.1"
   },
 }
 ```
@@ -145,7 +145,7 @@ Why:
 * `loose-envify` was used for `production` or `development` 
   contexts, but those was incorporated into package `exports`,
   so is not neccessary.
-* `@types/react` to esm `git+file:///home/mk/github/esm-polyfill/react#semver:^18.3.1`
+* `@types/react` to esm `github:esm-polyfill/react#semver:^18.3.1`
   but as re-labeled react have types to it is not neccessary,
-* `react` to esm `git+file:///home/mk/github/esm-polyfill/react#semver:^18.3.1`
-* `scheduler` to esm `git+file:///home/mk/github/esm-polyfill/scheduler#semver:^0.23.2`
+* `react` to esm `github:esm-polyfill/react#semver:^18.3.1`
+* `scheduler` to esm `github:esm-polyfill/scheduler#semver:^0.23.2`
